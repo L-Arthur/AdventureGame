@@ -11,24 +11,23 @@ public class DeplacementPersonnage {
      */
     public static Position deplacer(Foret foret, Position position, char direction) {
 
-        if (direction != 'N' && direction != 'S' && direction != 'E' && direction != 'O') {
+        if (direction != Constantes.DEPLACEMENT_HAUT && direction != Constantes.DEPLACEMENT_BAS && direction != Constantes.DEPLACEMENT_DROITE && direction != Constantes.DEPLACEMENT_GAUCHE) {
             throw new IllegalArgumentException("Direction invalide : " + direction);
         }
         int x = position.getX();
         int y = position.getY();
 
-        Position nouvellePosition = new Position(x, y);
-
-        if (direction == 'N' && foret.estCaseAccessible(x, y - 1)) {
-            nouvellePosition = new Position(x, y - 1);
-        } else if (direction == 'S' && foret.estCaseAccessible(x, y + 1)) {
-            nouvellePosition = new Position(x, y + 1);
-        } else if (direction == 'E' && foret.estCaseAccessible(x + 1, y)) {
-            nouvellePosition = new Position(x + 1, y);
-        } else if (direction == 'O' && foret.estCaseAccessible(x - 1, y)) {
-            nouvellePosition = new Position(x - 1, y);
+        if (direction == Constantes.DEPLACEMENT_HAUT && foret.estCaseAccessible(x, y - 1)) {
+            return  new Position(x, y - 1);
+        } else if (direction == Constantes.DEPLACEMENT_BAS && foret.estCaseAccessible(x, y + 1)) {
+            return new Position(x, y + 1);
+        } else if (direction == Constantes.DEPLACEMENT_DROITE && foret.estCaseAccessible(x + 1, y)) {
+            return new Position(x + 1, y);
+        } else if (direction == Constantes.DEPLACEMENT_GAUCHE && foret.estCaseAccessible(x - 1, y)) {
+            return new Position(x - 1, y);
         }
 
-        return nouvellePosition;
+        // Si la direction n'est pas valide, retourner la position actuelle
+        return position;
     }
 }

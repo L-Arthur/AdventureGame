@@ -43,7 +43,7 @@ public class SaisieUtilisateur {
      * @param message Le message à afficher dans la fonction
      * @return La coordonnée entrée par l'utilisateur
      */
-    public static int demanderCoordonnee(String message) {
+    private static int demanderCoordonnee(String message) {
         while (true) {
             try {
                 System.out.print(message);

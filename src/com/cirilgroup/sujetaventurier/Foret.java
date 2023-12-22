@@ -18,7 +18,7 @@ public class Foret {
      * @return true si la case est accessible, false sinon.
      */
     public boolean estCaseAccessible(int x, int y) {
-        return x >= 0 && x < foret[0].length && y >= 0 && y < foret.length && foret[y][x] != '#';
+        return x >= 0 && x < foret[0].length && y >= 0 && y < foret.length && foret[y][x] != Constantes.ARBRE;
     }
 
     /**
@@ -30,7 +30,7 @@ public class Foret {
         for (int i = 0; i < foret.length; i++) {
             char[] ligneAffichage = foret[i].clone();
             if (i == positionPersonnage.getY()) {
-                ligneAffichage[positionPersonnage.getX()] = 'x';
+                ligneAffichage[positionPersonnage.getX()] = Constantes.PERSONNAGE;
             }
             System.out.println(new String(ligneAffichage));
         }
