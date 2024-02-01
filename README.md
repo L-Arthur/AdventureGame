@@ -1,6 +1,24 @@
 <h1 align="center">AdventureGame</h1>
 
 <p>
+AdventureGame is a project developed based on a mini-game.<br>
+The principle is simple, an adventurer finds himself in a dark forest with some places impassable.<br>
+The user has the choice between three characters who have specific modes of movement, and three levels of difficulty.
+</p>
+<p>The user must enter the movements of his character in order to lead him to the objective.<br>
+He cannot go on "trees" (marked #), nor leave the map.
+To move his character, the user must enter a series of letters (representing the cardinal points) determining the movements of the adventurer.<br>
+The movements are 'N' for North, 'S' for South, 'E' for East, and 'W' for West.<br>
+The user must enter all movements at the same time. For example: SSESSNNWNN
+</p>
+<p>
+AdventureGame is a project developed entirely in Java. Although the project was started as part of a technical test, the map and the game mechanics have been completely redesigned.
+</p>
+
+
+<h1 align="center">AdventureGame</h1>
+
+<p>
 AdventureGame est un projet développé sur la base d'un min-jeu.<br>
 Le principe est simple, un aventurier se trouve dans une forêt obscure dont certains endroits sont infranchissables. <br>
 L'utilisateur a le choix entre trois personnages qui ont des modes de déplacement spécifiques, et trois niveau de difficulté.
@@ -15,22 +33,6 @@ L'utilisateur doit entrer tous les déplacements au même moment. Par exemple : 
 AdventureGame est un projet développé entièrement en Java. Bien que le projet ait été commencé dans le cadre d'un test technique, la carte ainsi que les mécaniques de jeu ont été entièrement repensé.
 </p>
 
-<h1 align="center">AdventureGame</h1>
-
-<p>
-AdventureGame is a project developed based on a mini-game.<br>
-The principle is simple, an adventurer finds himself in a dark forest with some places impassable.<br>
-The user has the choice between three characters who have specific modes of movement, and three levels of difficulty.
-</p>
-<p>The user must enter the movements of his character in order to lead him to the objective.<br>
-He cannot go on "trees" (marked #), nor leave the map.
-To move his character, the user must enter a series of letters (representing the cardinal points) determining the movements of the adventurer.<br>
-The movements are 'N' for North, 'S' for South, 'E' for East, and 'W' for West.<br>
-The user must enter all movements at the same time. For example: SSESSNNWNN
-</p>
-<p>
-AdventureGame is a project developed entirely in Java. Although the project was started as part of a technical test, the map and the game mechanics have been completely redesigned.
-</p>
 
 <h1 align="center">アドベンチャーゲーム</h1>
 
